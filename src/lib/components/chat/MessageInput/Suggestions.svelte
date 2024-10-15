@@ -47,7 +47,7 @@
 		{#each prompts as prompt, promptIdx}
 			<div class="snap-center shrink-0">
 				<button
-					class="flex flex-col flex-1 shrink-0 w-64 justify-between h-36 p-5 px-6 bg-gray-50 hover:bg-gray-100 dark:bg-white dark:hover:bg-gray-800 rounded-3xl transition group"
+					class="flex flex-col flex-1 shrink-0 w-64 justify-between h-36 p-5 px-6 bg-white hover:bg-gray-800 rounded-3xl transition group"
 					on:click={() => {
 						submitPrompt(prompt.content);
 					}}
@@ -71,13 +71,13 @@
 
 					<div class="w-full flex justify-between">
 						<div
-							class="text-xs text-gray-400 group-hover:text-gray-500 dark:text-gray-100 dark:group-hover:text-gray-500 transition self-center"
+							class="text-xs text-gray-400 group-hover:text-gray-100 group-hover:text-gray-500 transition self-center"
 						>
 							{$i18n.t('Prompt')}
 						</div>
 
 						<div
-							class="self-end p-1 rounded-lg text-gray-300 group-hover:text-gray-800 dark:text-gray-700 dark:group-hover:text-gray-100 transition"
+							class="self-end p-1 rounded-lg text-gray-700 group-hover:text-gray-100 transition"
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"

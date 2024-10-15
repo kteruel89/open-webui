@@ -100,7 +100,7 @@
 			</div>
 
 			<div
-				class="max-h-60 flex flex-col w-full rounded-r-lg bg-white dark:bg-gray-900 dark:text-gray-100"
+				class="max-h-60 flex flex-col w-full rounded-r-lg bg-gray-900 dark:text-gray-100"
 			>
 				<div class="m-1 overflow-y-auto p-1 rounded-r-lg space-y-0.5 scrollbar-hidden">
 					{#each filteredPrompts as prompt, promptIdx}
@@ -129,7 +129,7 @@
 				</div>
 
 				<div
-					class=" px-2 pb-1 text-xs text-gray-600 dark:text-gray-100 bg-white dark:bg-gray-900 rounded-br-xl flex items-center space-x-1"
+					class=" px-2 pb-1 text-xs text-gray-600 dark:text-gray-100 bg-gray-900 rounded-br-xl flex items-center space-x-1"
 				>
 					<div>
 						<svg

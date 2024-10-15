@@ -248,7 +248,7 @@
 
 	<div>
 		<button
-			class=" px-2 py-2 rounded-xl border border-gray-200 dark:border-gray-600 dark:border-0 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 transition font-medium text-sm flex items-center space-x-1"
+			class=" px-2 py-2 rounded-xl border border-gray-200 dark:border-gray-600 dark:border-0 hover:bg-gray-800 dark:hover:bg-gray-700 transition font-medium text-sm flex items-center space-x-1"
 			aria-label={$i18n.t('Add Docs')}
 			on:click={() => {
 				showAddDocModal = true;
@@ -311,7 +311,7 @@
 
 		{#if filteredDocs.filter((doc) => doc?.selected === 'checked').length === 0}
 			<button
-				class="px-2 py-0.5 space-x-1 flex h-fit items-center rounded-full transition bg-gray-50 hover:bg-gray-100 dark:bg-gray-800 dark:text-white"
+				class="px-2 py-0.5 space-x-1 flex h-fit items-center rounded-full transition bg-gray-50 hover:bg-gray-800 dark:text-white"
 				on:click={async () => {
 					selectedTag = '';
 					// await chats.set(await getChatListByTagName(localStorage.token, tag.name));
@@ -322,7 +322,7 @@
 
 			{#each tags as tag}
 				<button
-					class="px-2 py-0.5 space-x-1 flex h-fit items-center rounded-full transition bg-gray-50 hover:bg-gray-100 dark:bg-gray-800 dark:text-white"
+					class="px-2 py-0.5 space-x-1 flex h-fit items-center rounded-full transition bg-gray-50 hover:bg-gray-800 dark:text-white"
 					on:click={async () => {
 						selectedTag = tag;
 						// await chats.set(await getChatListByTagName(localStorage.token, tag.name));
@@ -341,7 +341,7 @@
 
 				<div class="flex gap-1">
 					<!-- <button
-                        class="px-2 py-0.5 space-x-1 flex h-fit items-center rounded-full transition bg-gray-50 hover:bg-gray-100 dark:bg-gray-800 dark:text-white"
+                        class="px-2 py-0.5 space-x-1 flex h-fit items-center rounded-full transition bg-gray-50 hover:bg-gray-800 dark:text-white"
                         on:click={async () => {
                             selectedTag = '';
                             // await chats.set(await getChatListByTagName(localStorage.token, tag.name));
@@ -351,7 +351,7 @@
                     </button> -->
 
 					<button
-						class="px-2 py-0.5 space-x-1 flex h-fit items-center rounded-full transition bg-gray-50 hover:bg-gray-100 dark:bg-gray-800 dark:text-white"
+						class="px-2 py-0.5 space-x-1 flex h-fit items-center rounded-full transition bg-gray-50 hover:bg-gray-800 dark:text-white"
 						on:click={async () => {
 							deleteDocs(filteredDocs.filter((doc) => doc.selected === 'checked'));
 							// await chats.set(await getChatListByTagName(localStorage.token, tag.name));
@@ -570,7 +570,7 @@
 		/>
 
 		<button
-			class="flex text-xs items-center space-x-1 px-3 py-1.5 rounded-xl bg-gray-50 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white transition"
+			class="flex text-xs items-center space-x-1 px-3 py-1.5 rounded-xl bg-gray-50 hover:bg-gray-800 dark:hover:bg-gray-700 dark:text-white transition"
 			on:click={() => {
 				documentsImportInputElement.click();
 			}}
@@ -596,7 +596,7 @@
 		</button>
 
 		<button
-			class="flex text-xs items-center space-x-1 px-3 py-1.5 rounded-xl bg-gray-50 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white transition"
+			class="flex text-xs items-center space-x-1 px-3 py-1.5 rounded-xl bg-gray-50 hover:bg-gray-800 dark:hover:bg-gray-700 dark:text-white transition"
 			on:click={async () => {
 				let blob = new Blob([JSON.stringify($documents)], {
 					type: 'application/json'

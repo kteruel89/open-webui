@@ -288,9 +288,9 @@
 				{#each filteredItems as item, index}
 					<button
 						aria-label="model-item"
-						class="flex w-full text-left font-medium line-clamp-1 select-none items-center rounded-button py-2 pl-3 pr-1.5 text-sm text-gray-700 dark:text-gray-100 outline-none transition-all duration-75 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg cursor-pointer data-[highlighted]:bg-muted {index ===
+						class="flex w-full text-left font-medium line-clamp-1 select-none items-center rounded-button py-2 pl-3 pr-1.5 text-sm text-gray-100 outline-none transition-all duration-75 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg cursor-pointer data-[highlighted]:bg-muted {index ===
 						selectedModelIdx
-							? 'bg-gray-100 dark:bg-gray-800 group-hover:bg-transparent'
+							? 'bg-gray-800 group-hover:bg-transparent'
 							: ''}"
 						data-arrow-selected={index === selectedModelIdx}
 						on:click={() => {
@@ -425,7 +425,7 @@
 					</button>
 				{:else}
 					<div>
-						<div class="block px-3 py-2 text-sm text-gray-700 dark:text-gray-100">
+						<div class="block px-3 py-2 text-sm text-gray-100">
 							{$i18n.t('No results found')}
 						</div>
 					</div>
@@ -433,7 +433,7 @@
 
 				{#if !(searchValue.trim() in $MODEL_DOWNLOAD_POOL) && searchValue && ollamaVersion && $user.role === 'admin'}
 					<button
-						class="flex w-full font-medium line-clamp-1 select-none items-center rounded-button py-2 pl-3 pr-1.5 text-sm text-gray-700 dark:text-gray-100 outline-none transition-all duration-75 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg cursor-pointer data-[highlighted]:bg-muted"
+						class="flex w-full font-medium line-clamp-1 select-none items-center rounded-button py-2 pl-3 pr-1.5 text-sm text-gray-100 outline-none transition-all duration-75 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg cursor-pointer data-[highlighted]:bg-muted"
 						on:click={() => {
 							pullModelHandler();
 						}}
@@ -444,7 +444,7 @@
 
 				{#each Object.keys($MODEL_DOWNLOAD_POOL) as model}
 					<div
-						class="flex w-full justify-between font-medium select-none rounded-button py-2 pl-3 pr-1.5 text-sm text-gray-700 dark:text-gray-100 outline-none transition-all duration-75 rounded-lg cursor-pointer data-[highlighted]:bg-muted"
+						class="flex w-full justify-between font-medium select-none rounded-button py-2 pl-3 pr-1.5 text-sm text-gray-100 outline-none transition-all duration-75 rounded-lg cursor-pointer data-[highlighted]:bg-muted"
 					>
 						<div class="flex">
 							<div class="-ml-2 mr-2.5 translate-y-0.5">
@@ -491,13 +491,13 @@
 						<div class="mr-2 translate-y-0.5">
 							<Tooltip content={$i18n.t('Cancel')}>
 								<button
-									class="text-gray-800 dark:text-gray-100"
+									class="text-gray-100"
 									on:click={() => {
 										cancelModelPullHandler(model);
 									}}
 								>
 									<svg
-										class="w-4 h-4 text-gray-800 dark:text-white"
+										class="w-4 h-4 text-white"
 										aria-hidden="true"
 										xmlns="http://www.w3.org/2000/svg"
 										width="24"
@@ -525,7 +525,7 @@
 
 				<div class="flex items-center mx-2 my-2">
 					<button
-						class="flex justify-between w-full font-medium line-clamp-1 select-none items-center rounded-button py-2 px-3 text-sm text-gray-700 dark:text-gray-100 outline-none transition-all duration-75 hover:bg-gray-100 dark:hover:bg-gray-900 rounded-lg cursor-pointer data-[highlighted]:bg-muted"
+						class="flex justify-between w-full font-medium line-clamp-1 select-none items-center rounded-button py-2 px-3 text-sm text-gray-100 outline-none transition-all duration-75 hover:bg-gray-900 rounded-lg cursor-pointer data-[highlighted]:bg-muted"
 						on:click={async () => {
 							temporaryChatEnabled.set(!$temporaryChatEnabled);
 							await goto('/');

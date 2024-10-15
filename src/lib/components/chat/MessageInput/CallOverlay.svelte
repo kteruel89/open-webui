@@ -848,7 +848,7 @@
 							await startVideoStream();
 						}}
 					>
-						<button class=" p-3 rounded-full bg-gray-50 dark:bg-gray-900" type="button">
+						<button class=" p-3 rounded-full bg-gray-900" type="button">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								viewBox="0 0 20 20"
@@ -866,7 +866,7 @@
 				{:else}
 					<Tooltip content={$i18n.t('Camera')}>
 						<button
-							class=" p-3 rounded-full bg-gray-50 dark:bg-gray-900"
+							class=" p-3 rounded-full bg-gray-900"
 							type="button"
 							on:click={async () => {
 								await navigator.mediaDevices.getUserMedia({ video: true });
@@ -920,7 +920,7 @@
 
 			<div>
 				<button
-					class=" p-3 rounded-full bg-gray-50 dark:bg-gray-900"
+					class=" p-3 rounded-full bg-gray-900"
 					on:click={async () => {
 						await stopAudioStream();
 						await stopVideoStream();

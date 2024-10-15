@@ -81,9 +81,9 @@
 	{#if confirmEdit}
 		<div
 			class=" w-full flex justify-between rounded-xl px-3 py-2 {chat.id === $chatId || confirmEdit
-				? 'bg-gray-200 dark:bg-gray-900'
+				? 'bg-gray-900'
 				: selected
-					? 'bg-gray-100 dark:bg-gray-950'
+					? 'bg-gray-950'
 					: 'group-hover:bg-gray-100 dark:group-hover:bg-gray-950'}  whitespace-nowrap text-ellipsis"
 		>
 			<input
@@ -95,9 +95,9 @@
 	{:else}
 		<a
 			class=" w-full flex justify-between rounded-xl px-3 py-2 {chat.id === $chatId || confirmEdit
-				? 'bg-gray-200 dark:bg-gray-900'
+				? 'bg-gray-900'
 				: selected
-					? 'bg-gray-100 dark:bg-gray-950'
+					? 'bg-gray-950'
 					: ' group-hover:bg-gray-100 dark:group-hover:bg-gray-950'}  whitespace-nowrap text-ellipsis"
 			href="/c/{chat.id}"
 			on:click={() => {

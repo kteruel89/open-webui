@@ -57,7 +57,7 @@
 		</div>
 	</div>
 
-	<div class=" w-full p-4 px-5 text-gray-700 dark:text-gray-100">
+	<div class=" w-full p-4 px-5 text-gray-100">
 		<div class=" overflow-y-scroll max-h-80 scrollbar-hidden">
 			<div class="mb-3">
 				{#if changelog}

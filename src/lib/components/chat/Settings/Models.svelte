@@ -698,13 +698,13 @@
 
 													<Tooltip content={$i18n.t('Cancel')}>
 														<button
-															class="text-gray-800 dark:text-gray-100"
+															class="text-gray-100"
 															on:click={() => {
 																cancelModelPullHandler(model);
 															}}
 														>
 															<svg
-																class="w-4 h-4 text-gray-800 dark:text-white"
+																class="w-4 h-4 text-white"
 																aria-hidden="true"
 																xmlns="http://www.w3.org/2000/svg"
 																width="24"

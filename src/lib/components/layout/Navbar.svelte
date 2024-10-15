@@ -49,7 +49,7 @@
 			>
 				<button
 					id="sidebar-toggle-button"
-					class="cursor-pointer px-2 py-2 flex rounded-xl hover:bg-gray-50 dark:hover:bg-gray-850 transition"
+					class="cursor-pointer px-2 py-2 flex rounded-xl hover:bg-gray-850 transition"
 					on:click={() => {
 						showSidebar.set(!$showSidebar);
 					}}
@@ -67,7 +67,7 @@
 				{/if}
 			</div>
 
-			<div class="self-start flex flex-none items-center text-gray-600 dark:text-red-999">
+			<div class="self-start flex flex-none items-center text-red-999">
 				<!-- <div class="md:hidden flex self-center w-[1px] h-5 mx-2 bg-gray-300 dark:bg-stone-700" /> -->
 
 				{#if shareEnabled && chat && chat.id}
@@ -82,7 +82,7 @@
 						}}
 					>
 						<button
-							class="flex cursor-pointer px-2 py-2 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-100 transition"
+							class="flex cursor-pointer px-2 py-2 rounded-xl hover:bg-gray-800 transition"
 							id="chat-context-menu-button"
 						>
 							<div class=" m-auto self-center">
@@ -108,7 +108,7 @@
 				{#if !$mobile}
 					<Tooltip content={$i18n.t('Controls')}>
 						<button
-							class=" flex cursor-pointer px-2 py-2 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-100 transition"
+							class=" flex cursor-pointer px-2 py-2 rounded-xl hover:bg-gray-950 transition"
 							on:click={() => {
 								showControls.set(!$showControls);
 							}}
@@ -126,7 +126,7 @@
 						id="new-chat-button"
 						class=" flex {$showSidebar
 							? 'md:hidden'
-							: ''} cursor-pointer px-2 py-2 rounded-xl text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-850 transition"
+							: ''} cursor-pointer px-2 py-2 rounded-xl text-gray-400 hover:bg-gray-850 transition"
 						on:click={() => {
 							initNewChat();
 						}}
@@ -161,7 +161,7 @@
 						}}
 					>
 						<button
-							class="select-none flex rounded-xl p-1.5 w-full hover:bg-gray-50 dark:hover:bg-gray-850 transition"
+							class="select-none flex rounded-xl p-1.5 w-full hover:bg-gray-850 transition"
 							aria-label="User Menu"
 						>
 							<div class=" self-center">

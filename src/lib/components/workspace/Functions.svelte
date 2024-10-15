@@ -203,7 +203,7 @@
 
 	<div>
 		<a
-			class=" px-2 py-2 rounded-xl border border-gray-200 dark:border-gray-600 dark:border-0 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 transition font-medium text-sm flex items-center space-x-1"
+			class=" px-2 py-2 rounded-xl border border-gray-200 dark:border-gray-600 dark:border-0 hover:bg-gray-800 dark:hover:bg-gray-700 transition font-medium text-sm flex items-center space-x-1"
 			href="/workspace/functions/create"
 		>
 			<svg
@@ -396,7 +396,7 @@
 		/>
 
 		<button
-			class="flex text-xs items-center space-x-1 px-3 py-1.5 rounded-xl bg-gray-50 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white transition"
+			class="flex text-xs items-center space-x-1 px-3 py-1.5 rounded-xl bg-gray-50 hover:bg-gray-800 dark:hover:bg-gray-700 dark:text-white transition"
 			on:click={() => {
 				functionsImportInputElement.click();
 			}}
@@ -420,7 +420,7 @@
 		</button>
 
 		<button
-			class="flex text-xs items-center space-x-1 px-3 py-1.5 rounded-xl bg-gray-50 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white transition"
+			class="flex text-xs items-center space-x-1 px-3 py-1.5 rounded-xl bg-gray-50 hover:bg-gray-800 dark:hover:bg-gray-700 dark:text-white transition"
 			on:click={async () => {
 				const _functions = await exportFunctions(localStorage.token).catch((error) => {
 					toast.error(error);
