@@ -307,7 +307,7 @@ class Pipe:
 				<div class="w-full mb-2 flex flex-col gap-1.5">
 					<div class="flex gap-2 w-full">
 						<input
-							class="w-full px-3 py-2 text-sm font-medium bg-gray-50 dark:bg-gray-850 dark:text-gray-200 rounded-lg outline-none"
+							class="w-full px-3 py-2 text-sm font-medium bg-gray-850 dark:text-gray-200 rounded-lg outline-none"
 							type="text"
 							placeholder={$i18n.t('Function Name (e.g. My Filter)')}
 							bind:value={name}
@@ -315,7 +315,7 @@ class Pipe:
 						/>
 
 						<input
-							class="w-full px-3 py-2 text-sm font-medium disabled:text-gray-300 dark:disabled:text-gray-700 bg-gray-50 dark:bg-gray-850 dark:text-gray-200 rounded-lg outline-none"
+							class="w-full px-3 py-2 text-sm font-medium disabled:text-gray-300 dark:disabled:text-gray-700 bg-gray-850 dark:text-gray-200 rounded-lg outline-none"
 							type="text"
 							placeholder={$i18n.t('Function ID (e.g. my_filter)')}
 							bind:value={id}
@@ -324,7 +324,7 @@ class Pipe:
 						/>
 					</div>
 					<input
-						class="w-full px-3 py-2 text-sm font-medium bg-gray-50 dark:bg-gray-850 dark:text-gray-200 rounded-lg outline-none"
+						class="w-full px-3 py-2 text-sm font-medium bg-gray-850 dark:text-gray-200 rounded-lg outline-none"
 						type="text"
 						placeholder={$i18n.t(
 							'Function Description (e.g. A filter to remove profanity from text)'

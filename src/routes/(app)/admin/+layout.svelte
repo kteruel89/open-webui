@@ -70,7 +70,7 @@
 
 				<!-- <a
 				class="min-w-fit rounded-lg p-1.5 px-3 {$page.url.pathname.includes('/workspace/documents')
-					? 'bg-gray-50 dark:bg-gray-850'
+					? 'bg-gray-850'
 					: ''} transition"
 				href="/workspace/documents"
 			>
@@ -79,7 +79,7 @@
 
 			<a
 				class="min-w-fit rounded-lg p-1.5 px-3 {$page.url.pathname.includes('/workspace/playground')
-					? 'bg-gray-50 dark:bg-gray-850'
+					? 'bg-gray-850'
 					: ''} transition"
 				href="/workspace/playground">{$i18n.t('Playground')}</a
 			> -->

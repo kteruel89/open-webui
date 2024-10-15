@@ -290,7 +290,7 @@
 				</div>
 
 				<button
-					class=" self-center text-xs p-1 px-3 bg-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white rounded-lg flex flex-row space-x-1 items-center {scanDirLoading
+					class=" self-center text-xs p-1 px-3 bg-gray-800 hover:bg-gray-700 text-white rounded-lg flex flex-row space-x-1 items-center {scanDirLoading
 						? ' cursor-not-allowed'
 						: ''}"
 					on:click={() => {
@@ -426,7 +426,7 @@
 				<div class="flex w-full">
 					<div class="flex-1 mr-2">
 						<select
-							class="w-full rounded-lg py-2 px-4 text-sm bg-gray-50 dark:text-gray-300 dark:bg-gray-850 outline-none"
+							class="w-full rounded-lg py-2 px-4 text-sm text-gray-300 bg-gray-850 outline-none"
 							bind:value={embeddingModel}
 							placeholder={$i18n.t('Select a model')}
 							required
@@ -454,7 +454,7 @@
 
 					{#if embeddingEngine === ''}
 						<button
-							class="px-2.5 bg-gray-50 hover:bg-gray-200 text-gray-800 dark:bg-gray-850 dark:hover:bg-gray-800 dark:text-white rounded-lg transition"
+							class="px-2.5 bg-gray-850 hover:bg-gray-800 text-white rounded-lg transition"
 							on:click={() => {
 								embeddingModelUpdateHandler();
 							}}
@@ -523,7 +523,7 @@
 					<div class="flex w-full">
 						<div class="flex-1 mr-2">
 							<input
-								class="w-full rounded-lg py-2 px-4 text-sm bg-gray-50 dark:text-gray-300 dark:bg-gray-850 outline-none"
+								class="w-full rounded-lg py-2 px-4 text-sm text-gray-300 bg-gray-850 outline-none"
 								placeholder={$i18n.t('Set reranking model (e.g. {{model}})', {
 									model: 'BAAI/bge-reranker-v2-m3'
 								})}
@@ -531,7 +531,7 @@
 							/>
 						</div>
 						<button
-							class="px-2.5 bg-gray-50 hover:bg-gray-200 text-gray-800 dark:bg-gray-850 dark:hover:bg-gray-800 dark:text-white rounded-lg transition"
+							class="px-2.5 bg-gray-850 hover:bg-gray-800 text-white rounded-lg transition"
 							on:click={() => {
 								rerankingModelUpdateHandler();
 							}}
@@ -613,7 +613,7 @@
 				<div class="flex w-full mt-2">
 					<div class="flex-1 mr-2">
 						<input
-							class="w-full rounded-lg py-2 px-4 text-sm bg-gray-50 dark:text-gray-300 dark:bg-gray-850 outline-none"
+							class="w-full rounded-lg py-2 px-4 text-sm text-gray-300 bg-gray-850 outline-none"
 							placeholder={$i18n.t('Enter Tika Server URL')}
 							bind:value={tikaServerUrl}
 						/>
@@ -641,7 +641,7 @@
 							placement="top-start"
 						>
 							<input
-								class="w-full rounded-lg py-1.5 px-4 text-sm bg-gray-50 dark:text-gray-300 dark:bg-gray-850 outline-none"
+								class="w-full rounded-lg py-1.5 px-4 text-sm text-gray-300 bg-gray-850 outline-none"
 								type="number"
 								placeholder={$i18n.t('Leave empty for unlimited')}
 								bind:value={fileMaxSize}
@@ -664,7 +664,7 @@
 							placement="top-start"
 						>
 							<input
-								class=" w-full rounded-lg py-1.5 px-4 text-sm bg-gray-50 dark:text-gray-300 dark:bg-gray-850 outline-none"
+								class=" w-full rounded-lg py-1.5 px-4 text-sm text-gray-300 bg-gray-850 outline-none"
 								type="number"
 								placeholder={$i18n.t('Leave empty for unlimited')}
 								bind:value={fileMaxCount}
@@ -706,7 +706,7 @@
 
 						<div class="self-center p-3">
 							<input
-								class=" w-full rounded-lg py-1.5 px-4 text-sm bg-gray-50 dark:text-gray-300 dark:bg-gray-850 outline-none"
+								class=" w-full rounded-lg py-1.5 px-4 text-sm text-gray-300 bg-gray-850 outline-none"
 								type="number"
 								step="0.01"
 								placeholder={$i18n.t('Enter Score')}

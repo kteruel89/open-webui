@@ -213,7 +213,7 @@
 		/>
 
 		<button
-			class="flex text-xs items-center space-x-1 px-3 py-1.5 rounded-xl bg-gray-50 hover:bg-gray-800 dark:hover:bg-gray-700 dark:text-white transition"
+			class="flex text-xs items-center space-x-1 px-3 py-1.5 rounded-xl hover:bg-gray-700 text-white transition"
 			on:click={() => {
 				promptsImportInputElement.click();
 			}}
@@ -237,7 +237,7 @@
 		</button>
 
 		<button
-			class="flex text-xs items-center space-x-1 px-3 py-1.5 rounded-xl bg-gray-50 hover:bg-gray-800 dark:hover:bg-gray-700 dark:text-white transition"
+			class="flex text-xs items-center space-x-1 px-3 py-1.5 rounded-xl hover:bg-gray-700 text-white transition"
 			on:click={async () => {
 				// promptsImportInputElement.click();
 				let blob = new Blob([JSON.stringify($prompts)], {
