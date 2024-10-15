@@ -95,7 +95,7 @@
 		class="pl-1 pr-12 mb-3 text-left w-full absolute bottom-0 left-0 right-0 z-10"
 	>
 		<div class="flex w-full dark:border dark:border-gray-850 rounded-lg">
-			<div class="  bg-gray-50 dark:bg-gray-850 w-10 rounded-l-lg text-center">
+			<div class="  bg-gray-850 w-10 rounded-l-lg text-center">
 				<div class=" text-lg font-semibold mt-2">/</div>
 			</div>
 
@@ -106,7 +106,7 @@
 					{#each filteredPrompts as prompt, promptIdx}
 						<button
 							class=" px-3 py-1.5 rounded-xl w-full text-left {promptIdx === selectedPromptIdx
-								? '  bg-gray-50 dark:bg-gray-850 selected-command-option-button'
+								? '  bg-gray-850 selected-command-option-button'
 								: ''}"
 							type="button"
 							on:click={() => {

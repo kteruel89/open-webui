@@ -170,7 +170,7 @@
 					<div>
 						<div class="mt-1 flex gap-2 mb-1">
 							<input
-								class="flex-1 w-full rounded-lg py-2 pl-4 text-sm bg-gray-50 dark:text-gray-300 dark:bg-gray-850 outline-none"
+								class="flex-1 w-full rounded-lg py-2 pl-4 text-sm text-gray-300 bg-gray-850 outline-none"
 								placeholder={$i18n.t('API Base URL')}
 								bind:value={STT_OPENAI_API_BASE_URL}
 								required
@@ -188,7 +188,7 @@
 							<div class="flex-1">
 								<input
 									list="model-list"
-									class="w-full rounded-lg py-2 px-4 text-sm bg-gray-50 dark:text-gray-300 dark:bg-gray-850 outline-none"
+									class="w-full rounded-lg py-2 px-4 text-sm text-gray-300 bg-gray-850 outline-none"
 									bind:value={STT_MODEL}
 									placeholder="Select a model"
 								/>
@@ -240,7 +240,7 @@
 					<div>
 						<div class="mt-1 flex gap-2 mb-1">
 							<input
-								class="flex-1 w-full rounded-lg py-2 pl-4 text-sm bg-gray-50 dark:text-gray-300 dark:bg-gray-850 outline-none"
+								class="flex-1 w-full rounded-lg py-2 pl-4 text-sm text-gray-300 bg-gray-850 outline-none"
 								placeholder={$i18n.t('API Base URL')}
 								bind:value={TTS_OPENAI_API_BASE_URL}
 								required
@@ -253,7 +253,7 @@
 					<div>
 						<div class="mt-1 flex gap-2 mb-1">
 							<input
-								class="flex-1 w-full rounded-lg py-2 pl-4 text-sm bg-gray-50 dark:text-gray-300 dark:bg-gray-850 outline-none"
+								class="flex-1 w-full rounded-lg py-2 pl-4 text-sm text-gray-300 bg-gray-850 outline-none"
 								placeholder={$i18n.t('API Key')}
 								bind:value={TTS_API_KEY}
 								required
@@ -264,13 +264,13 @@
 					<div>
 						<div class="mt-1 flex gap-2 mb-1">
 							<input
-								class="flex-1 w-full rounded-lg py-2 pl-4 text-sm bg-gray-50 dark:text-gray-300 dark:bg-gray-850 outline-none"
+								class="flex-1 w-full rounded-lg py-2 pl-4 text-sm text-gray-300 bg-gray-850 outline-none"
 								placeholder={$i18n.t('API Key')}
 								bind:value={TTS_API_KEY}
 								required
 							/>
 							<input
-								class="flex-1 w-full rounded-lg py-2 pl-4 text-sm bg-gray-50 dark:text-gray-300 dark:bg-gray-850 outline-none"
+								class="flex-1 w-full rounded-lg py-2 pl-4 text-sm text-gray-300 bg-gray-850 outline-none"
 								placeholder={$i18n.t('Azure Region')}
 								bind:value={TTS_AZURE_SPEECH_REGION}
 								required
@@ -329,7 +329,7 @@
 								<div class="flex-1">
 									<input
 										list="tts-model-list"
-										class="w-full rounded-lg py-2 px-4 text-sm bg-gray-50 dark:text-gray-300 dark:bg-gray-850 outline-none"
+										class="w-full rounded-lg py-2 px-4 text-sm text-gray-300 bg-gray-850 outline-none"
 										bind:value={TTS_MODEL}
 										placeholder="Select a model"
 									/>
@@ -370,7 +370,7 @@
 								<div class="flex-1">
 									<input
 										list="tts-model-list"
-										class="w-full rounded-lg py-2 px-4 text-sm bg-gray-50 dark:text-gray-300 dark:bg-gray-850 outline-none"
+										class="w-full rounded-lg py-2 px-4 text-sm text-gray-300 bg-gray-850 outline-none"
 										bind:value={TTS_MODEL}
 										placeholder="Select a model"
 									/>
@@ -419,7 +419,7 @@
 								<div class="flex-1">
 									<input
 										list="tts-model-list"
-										class="w-full rounded-lg py-2 px-4 text-sm bg-gray-50 dark:text-gray-300 dark:bg-gray-850 outline-none"
+										class="w-full rounded-lg py-2 px-4 text-sm text-gray-300 bg-gray-850 outline-none"
 										bind:value={TTS_AZURE_SPEECH_OUTPUT_FORMAT}
 										placeholder="Select a output format"
 									/>

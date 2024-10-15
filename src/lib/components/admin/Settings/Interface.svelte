@@ -126,7 +126,7 @@
 				>
 					<textarea
 						bind:value={taskConfig.TITLE_GENERATION_PROMPT_TEMPLATE}
-						class="w-full rounded-lg py-3 px-4 text-sm bg-gray-50 dark:text-gray-300 dark:bg-gray-850 outline-none resize-none"
+						class="w-full rounded-lg py-3 px-4 text-sm text-gray-300 bg-gray-850 outline-none resize-none"
 						rows="3"
 						placeholder={$i18n.t('Leave empty to use the default prompt, or enter a custom prompt')}
 					/>
@@ -153,7 +153,7 @@
 					>
 						<textarea
 							bind:value={taskConfig.SEARCH_QUERY_GENERATION_PROMPT_TEMPLATE}
-							class="w-full rounded-lg py-3 px-4 text-sm bg-gray-50 dark:text-gray-300 dark:bg-gray-850 outline-none resize-none"
+							class="w-full rounded-lg py-3 px-4 text-sm text-gray-300 bg-gray-850 outline-none resize-none"
 							rows="3"
 							placeholder={$i18n.t(
 								'Leave empty to use the default prompt, or enter a custom prompt'

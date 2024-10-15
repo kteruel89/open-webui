@@ -56,14 +56,14 @@
 			>
 				<a
 					class="min-w-fit rounded-lg p-1.5 px-3 {$page.url.pathname.includes('/workspace/models')
-						? 'bg-gray-50 dark:bg-gray-850'
+						? 'bg-gray-850'
 						: ''} transition"
 					href="/workspace/models">{$i18n.t('Models')}</a
 				>
 
 				<a
 					class="min-w-fit rounded-lg p-1.5 px-3 {$page.url.pathname.includes('/workspace/prompts')
-						? 'bg-gray-50 dark:bg-gray-850'
+						? 'bg-gray-850'
 						: ''} transition"
 					href="/workspace/prompts">{$i18n.t('Prompts')}</a
 				>
@@ -72,7 +72,7 @@
 					class="min-w-fit rounded-lg p-1.5 px-3 {$page.url.pathname.includes(
 						'/workspace/documents'
 					)
-						? 'bg-gray-50 dark:bg-gray-850'
+						? 'bg-gray-850'
 						: ''} transition"
 					href="/workspace/documents"
 				>
@@ -81,7 +81,7 @@
 
 				<a
 					class="min-w-fit rounded-lg p-1.5 px-3 {$page.url.pathname.includes('/workspace/tools')
-						? 'bg-gray-50 dark:bg-gray-850'
+						? 'bg-gray-850'
 						: ''} transition"
 					href="/workspace/tools"
 				>
@@ -92,7 +92,7 @@
 					class="min-w-fit rounded-lg p-1.5 px-3 {$page.url.pathname.includes(
 						'/workspace/functions'
 					)
-						? 'bg-gray-50 dark:bg-gray-850'
+						? 'bg-gray-850'
 						: ''} transition"
 					href="/workspace/functions"
 				>

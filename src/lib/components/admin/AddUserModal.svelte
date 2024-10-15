@@ -149,7 +149,7 @@
 				>
 					<div class="flex text-center text-sm font-medium rounded-xl bg-transparent/10 p-1 mb-2">
 						<button
-							class="w-full rounded-lg p-1.5 {tab === '' ? 'bg-gray-50 dark:bg-white' : ''}"
+							class="w-full rounded-lg p-1.5 {tab === '' ? 'bg-white' : ''}"
 							type="button"
 							on:click={() => {
 								tab = '';
@@ -157,7 +157,7 @@
 						>
 
 						<button
-							class="w-full rounded-lg p-1 {tab === 'import' ? 'bg-gray-50 dark:bg-white' : ''}"
+							class="w-full rounded-lg p-1 {tab === 'import' ? 'bg-white' : ''}"
 							type="button"
 							on:click={() => {
 								tab = 'import';

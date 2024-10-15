@@ -195,7 +195,7 @@ class Tools:
 				<div class="w-full mb-2 flex flex-col gap-1.5">
 					<div class="flex gap-2 w-full">
 						<input
-							class="w-full px-3 py-2 text-sm font-medium bg-gray-50 dark:bg-gray-850 dark:text-gray-200 rounded-lg outline-none"
+							class="w-full px-3 py-2 text-sm font-medium bg-gray-850 dark:text-gray-200 rounded-lg outline-none"
 							type="text"
 							placeholder={$i18n.t('Toolkit Name (e.g. My ToolKit)')}
 							bind:value={name}
@@ -203,7 +203,7 @@ class Tools:
 						/>
 
 						<input
-							class="w-full px-3 py-2 text-sm font-medium disabled:text-gray-300 dark:disabled:text-gray-700 bg-gray-50 dark:bg-gray-850 dark:text-gray-200 rounded-lg outline-none"
+							class="w-full px-3 py-2 text-sm font-medium disabled:text-gray-300 dark:disabled:text-gray-700 bg-gray-850 dark:text-gray-200 rounded-lg outline-none"
 							type="text"
 							placeholder={$i18n.t('Toolkit ID (e.g. my_toolkit)')}
 							bind:value={id}
@@ -212,7 +212,7 @@ class Tools:
 						/>
 					</div>
 					<input
-						class="w-full px-3 py-2 text-sm font-medium bg-gray-50 dark:bg-gray-850 dark:text-gray-200 rounded-lg outline-none"
+						class="w-full px-3 py-2 text-sm font-medium bg-gray-850 dark:text-gray-200 rounded-lg outline-none"
 						type="text"
 						placeholder={$i18n.t(
 							'Toolkit Description (e.g. A toolkit for performing various operations)'

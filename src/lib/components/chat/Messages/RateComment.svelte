@@ -68,7 +68,7 @@
 </script>
 
 <div
-	class=" my-2.5 rounded-xl px-4 py-3 border dark:border-gray-850"
+	class=" my-2.5 rounded-xl px-4 py-3 border border-gray-850"
 	id="message-feedback-{messageId}"
 >
 	<div class="flex justify-between items-center">
