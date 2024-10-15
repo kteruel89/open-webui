@@ -572,7 +572,7 @@
 						<div class="flex gap-2">
 							<div class="flex-1 pb-1">
 								<select
-									class="w-full rounded-lg py-2 px-4 text-sm bg-gray-50 dark:text-white dark:bg-gray-850 outline-none"
+									class="w-full rounded-lg py-2 px-4 text-sm text-white bg-gray-850 outline-none"
 									bind:value={selectedOllamaUrlIdx}
 									placeholder={$i18n.t('Select an Ollama instance')}
 								>
@@ -713,13 +713,13 @@
 
 													<Tooltip content={$i18n.t('Cancel')}>
 														<button
-															class="text-gray-800 dark:text-gray-100"
+															class="text-gray-100"
 															on:click={() => {
 																cancelModelPullHandler(model);
 															}}
 														>
 															<svg
-																class="w-4 h-4 text-gray-800 dark:text-white"
+																class="w-4 h-4 text-white"
 																aria-hidden="true"
 																xmlns="http://www.w3.org/2000/svg"
 																width="24"
@@ -755,7 +755,7 @@
 							<div class="flex w-full">
 								<div class="flex-1 mr-2">
 									<select
-										class="w-full rounded-lg py-2 px-4 text-sm bg-gray-50 dark:text-white dark:bg-gray-850 outline-none"
+										class="w-full rounded-lg py-2 px-4 text-sm text-white bg-gray-850 outline-none"
 										bind:value={deleteModelTag}
 										placeholder={$i18n.t('Select a model')}
 									>

@@ -641,7 +641,7 @@
 			<div class="my-2 flex justify-end mb-20">
 				<button
 					class=" text-sm px-3 py-2 transition rounded-xl {loading
-						? ' cursor-not-allowed bg-gray-100 dark:bg-gray-800'
+						? ' cursor-not-allowed bg-gray-800'
 						: ' bg-gray-50 hover:bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-800'} flex"
 					type="submit"
 					disabled={loading}

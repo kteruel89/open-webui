@@ -121,13 +121,13 @@
 			</div>
 
 			<div
-				class="max-h-60 flex flex-col w-full rounded-r-xl bg-white dark:bg-gray-900 dark:text-gray-100"
+				class="max-h-60 flex flex-col w-full rounded-r-xl bg-gray-900 dark:text-gray-100"
 			>
 				<div class="m-1 overflow-y-auto p-1 rounded-r-xl space-y-0.5 scrollbar-hidden">
 					{#each filteredItems as doc, docIdx}
 						<button
 							class=" px-3 py-1.5 rounded-xl w-full text-left {docIdx === selectedIdx
-								? ' bg-gray-50 dark:bg-gray-850 dark:text-gray-100 selected-command-option-button'
+								? ' bg-gray-850 text-gray-100 selected-command-option-button'
 								: ''}"
 							type="button"
 							on:click={() => {
@@ -166,7 +166,7 @@
 									.substring(1)
 									.startsWith('https://youtu.be'))}
 						<button
-							class="px-3 py-1.5 rounded-xl w-full text-left bg-gray-50 dark:bg-gray-850 dark:text-gray-100 selected-command-option-button"
+							class="px-3 py-1.5 rounded-xl w-full text-left bg-gray-850 text-gray-100 selected-command-option-button"
 							type="button"
 							on:click={() => {
 								const url = prompt.split(' ')?.at(0)?.substring(1);
@@ -189,7 +189,7 @@
 						</button>
 					{:else if prompt.split(' ')?.at(0)?.substring(1).startsWith('http')}
 						<button
-							class="px-3 py-1.5 rounded-xl w-full text-left bg-gray-50 dark:bg-gray-850 dark:text-gray-100 selected-command-option-button"
+							class="px-3 py-1.5 rounded-xl w-full text-left bg-gray-850 text-gray-100 selected-command-option-button"
 							type="button"
 							on:click={() => {
 								const url = prompt.split(' ')?.at(0)?.substring(1);

@@ -56,7 +56,7 @@
 			</div>
 
 			<div
-				class="max-h-60 flex flex-col w-full rounded-r-lg bg-white dark:bg-gray-900 dark:text-gray-100"
+				class="max-h-60 flex flex-col w-full rounded-r-lg bg-gray-900 dark:text-gray-100"
 			>
 				<div class="m-1 overflow-y-auto p-1 rounded-r-lg space-y-0.5 scrollbar-hidden">
 					{#each filteredModels as model, modelIdx}

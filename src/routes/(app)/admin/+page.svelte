@@ -156,8 +156,8 @@
 	</div>
 
 	<div class="scrollbar-hidden relative whitespace-nowrap overflow-x-auto max-w-full">
-		<table class="w-full text-sm text-left text-gray-500 dark:text-gray-100 table-auto max-w-full">
-			<thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-850 dark:text-gray-400">
+		<table class="w-full text-sm text-left text-gray-100 table-auto max-w-full">
+			<thead class="text-xs text-gray-700 uppercase bg-gray-850 text-gray-400">
 				<tr>
 					<th
 						scope="col"
@@ -278,7 +278,7 @@
 								{$i18n.t(user.role)}</button
 							>
 						</td>
-						<td class="px-3 py-2 font-medium text-gray-900 dark:text-black w-max">
+						<td class="px-3 py-2 font-medium text-black w-max">
 							<div class="flex flex-row w-max">
 								<img
 									class=" rounded-full w-6 h-6 object-cover mr-2.5"

@@ -299,7 +299,7 @@
 								/>
 							</div>
 							<button
-								class="px-2.5 bg-gray-50 hover:bg-gray-100 text-gray-800 dark:bg-gray-850 dark:hover:bg-gray-800 dark:text-gray-100 rounded-lg transition"
+								class="px-2.5 bg-gray-850 hover:bg-gray-800 text-gray-100 rounded-lg transition"
 								type="button"
 								on:click={async () => {
 									await updateConfigHandler();
@@ -435,7 +435,7 @@
 								/>
 							</div>
 							<button
-								class="px-2.5 bg-gray-50 hover:bg-gray-100 text-gray-800 dark:bg-gray-850 dark:hover:bg-gray-800 dark:text-gray-100 rounded-lg transition"
+								class="px-2.5 bg-gray-850 hover:bg-gray-800 text-gray-100 rounded-lg transition"
 								type="button"
 								on:click={async () => {
 									await updateConfigHandler();
@@ -566,7 +566,7 @@
 
 						<div class="flex gap-2 mb-1">
 							<input
-								class="flex-1 w-full rounded-lg py-2 px-4 text-sm bg-gray-50 dark:text-white dark:bg-gray-850 outline-none"
+								class="flex-1 w-full rounded-lg py-2 px-4 text-sm text-white bg-gray-850 outline-none"
 								placeholder={$i18n.t('API Base URL')}
 								bind:value={config.openai.OPENAI_API_BASE_URL}
 								required
